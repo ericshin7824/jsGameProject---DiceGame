@@ -49,126 +49,9 @@ body .nav-wrapper .nav .logo h1 {
 
 body main {
   background: #333;
-  position: relative;
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body main .switch-players.player-active {
-  -webkit-transform: translateX(-25%);
-          transform: translateX(-25%);
-}
-
-body main .switch-players {
-  max-width: 840px;
-  min-width: 720px;
-  width: 100%;
-  -webkit-transform: translateX(25%);
-          transform: translateX(25%);
-  -webkit-transition: 0.6s ease-in-out;
-  transition: 0.6s ease-in-out;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-body main .switch-players .player-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body main .switch-players .player-box #player-0.player-active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  z-index: 9999;
-}
-
-body main .switch-players .player-box #player-1.player-active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  z-index: 9999;
-}
-
-body main .switch-players .player-box .player.player-inactive {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-}
-
-body main .switch-players .player-box .player::before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  right: 50%;
-  background: #646464;
-  width: 36px;
-  height: 6px;
-  border-radius: 40px;
-  -webkit-box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(220, 220, 220, 0.8);
-          box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(220, 220, 220, 0.8);
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-}
-
-body main .switch-players .player-box .player {
-  background: #b4b4b4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c8c8c8), to(#b4b4b4));
-  background-image: linear-gradient(180deg, #c8c8c8 0%, #b4b4b4 100%);
-  width: 300px;
-  padding: 18px 12px;
-  border-radius: 36px;
-  -webkit-box-shadow: 0 1px 1px 2px rgba(200, 200, 200, 0.8), 0 4px 8px 12px #a0a0a0, 0 6px 8px 12px #505050, 0 8px 8px 22px #3c3c3c, 0 10px 0 25px #787878, 0 35px 20px 20px rgba(0, 0, 0, 0.6), 0 60px 50px 50px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 1px 2px rgba(200, 200, 200, 0.8), 0 4px 8px 12px #a0a0a0, 0 6px 8px 12px #505050, 0 8px 8px 22px #3c3c3c, 0 10px 0 25px #787878, 0 35px 20px 20px rgba(0, 0, 0, 0.6), 0 60px 50px 50px rgba(0, 0, 0, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: relative;
-  -webkit-transition: 0.6s ease-in-out;
-  transition: 0.6s ease-in-out;
-  z-index: 8888;
-}
-
-body main .switch-players .player-box .player .screen-wrapper {
-  position: relative;
-  background: #777;
-  width: 100%;
-  padding: 18px 36px;
-  margin-bottom: 30px;
-  border-radius: 36px;
-  border: 1px solid rgba(220, 220, 220, 0.6);
-  border-bottom: 2px solid rgba(220, 220, 220, 0.6);
-  -webkit-box-shadow: -15px -15px 20px rgba(255, 255, 255, 0.4), 15px 15px 20px rgba(255, 255, 255, 0.9);
-          box-shadow: -15px -15px 20px rgba(255, 255, 255, 0.4), 15px 15px 20px rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: inset 0 0 40px rgba(80, 80, 80, 0.9);
-          box-shadow: inset 0 0 40px rgba(80, 80, 80, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,96 +61,11 @@ body main .switch-players .player-box .player .screen-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  z-index: 8888;
 }
 
-body main .switch-players .player-box .player .screen-wrapper .screen.player-active {
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5), 0px 0px 25px 10px rgba(255, 255, 255, 0.35), 0px 0px 30px 15px rgba(214, 214, 214, 0.3), 0px 0px 35px 20px rgba(232, 232, 232, 0.25);
-          box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5), 0px 0px 25px 10px rgba(255, 255, 255, 0.35), 0px 0px 30px 15px rgba(214, 214, 214, 0.3), 0px 0px 35px 20px rgba(232, 232, 232, 0.25);
-}
-
-body main .switch-players .player-box .player .screen-wrapper .screen.player-active.screen::before {
-  background: #e90000;
-  -webkit-box-shadow: 0px 0px 3px 3px rgba(233, 0, 0, 0.3), 0px 0px 15px 5px rgba(184, 0, 0, 0.71), 0px 0px 30px 10px rgba(255, 207, 135, 0.2);
-          box-shadow: 0px 0px 3px 3px rgba(233, 0, 0, 0.3), 0px 0px 15px 5px rgba(184, 0, 0, 0.71), 0px 0px 30px 10px rgba(255, 207, 135, 0.2);
-}
-
-body main .switch-players .player-box .player .screen-wrapper .screen.player-winner {
-  background: greenyellow;
-}
-
-body main .switch-players .player-box .player .screen-wrapper .screen::before {
-  content: "";
-  position: absolute;
-  top: 48px;
-  left: -22px;
-  background: #646464;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(220, 220, 220, 0.8);
-          box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(220, 220, 220, 0.8);
-  z-index: 9999;
-}
-
-body main .switch-players .player-box .player .screen-wrapper .screen {
-  position: relative;
-  background: #555;
-  width: 100%;
-  height: 180px;
-  padding: 18px 0;
-  border-radius: 6px;
-  border: 1px solid rgba(180, 180, 180, 0.6);
-  -webkit-box-shadow: inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.75s;
-  transition: all 0.75s;
-}
-
-body main .switch-players .player-box .player .screen-wrapper .screen span {
-  color: #777;
-  font-size: 5em;
-  font-weight: 900;
-}
-
-body main .switch-players .player-box .player .screen-wrapper .screen .total {
-  position: absolute;
-  top: 4px;
-  left: 6px;
-  color: #777;
-  font-size: 0.6em;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body main .switch-players .player-box .player .screen-wrapper .screen .total .total-score {
-  font-weight: 400;
-}
-
-body main .switch-players .player-box .player .screen-wrapper .screen .total .total-label {
-  margin-right: 6px;
-}
-
-body main .switch-players .player-box .player .controls {
-  width: 100%;
-  margin-bottom: 48px;
+body main .players-container {
+  width: 1080px;
+  min-width: 1080px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,11 +78,168 @@ body main .switch-players .player-box .player .controls {
           align-items: center;
 }
 
-body main .switch-players .player-box .player .controls .btn.player-inactive {
-  pointer-events: none;
+body main .players-container .player-0 {
+  margin-left: 150px;
 }
 
-body main .switch-players .player-box .player .controls .tittle {
+body main .players-container .player-1 {
+  margin-right: 150px;
+}
+
+body main .players-container .player {
+  background: #b4b4b4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c8c8c8), to(#b4b4b4));
+  background-image: linear-gradient(180deg, #c8c8c8 0%, #b4b4b4 100%);
+  width: 300px;
+  min-width: 300px;
+  padding: 18px 12px;
+  border-radius: 36px;
+  -webkit-box-shadow: 0 1px 1px 2px rgba(200, 200, 200, 0.8), 0 4px 8px 12px #a0a0a0, 0 6px 8px 12px #505050, 0 8px 8px 22px #3c3c3c, 0 10px 0 25px #787878, 0 35px 20px 20px rgba(0, 0, 0, 0.6), 0 60px 50px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px 2px rgba(200, 200, 200, 0.8), 0 4px 8px 12px #a0a0a0, 0 6px 8px 12px #505050, 0 8px 8px 22px #3c3c3c, 0 10px 0 25px #787878, 0 35px 20px 20px rgba(0, 0, 0, 0.6), 0 60px 50px 50px rgba(0, 0, 0, 0.2);
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  z-index: 8888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .players-container .player .screen {
+  background: #555;
+  width: 220px;
+  height: 180px;
+  padding: 18px 0;
+  padding: 0 12px;
+  margin: 18px 0 54px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0px 1px 2px 1px rgba(0, 0, 0, 0.6), inset -1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 2px 1px rgba(0, 0, 0, 0.6), inset -1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .players-container .player .screen .current {
+  color: #777;
+  font-weight: 900;
+  text-align: center;
+}
+
+body main .players-container .player .screen .current .texts-press-start {
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
+
+body main .players-container .player .screen .current .texts-rules span:first-child {
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+body main .players-container .player .screen .current .texts-rules span {
+  font-size: 0.6em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+body main .players-container .player .screen .current .texts-press-start,
+body main .players-container .player .screen .current .texts-rules {
+  text-align: left;
+}
+
+body main .players-container .player .screen .current .texts-press-start span,
+body main .players-container .player .screen .current .texts-rules span {
+  display: block;
+}
+
+body main .players-container .player .screen .total {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  color: #777;
+  font-size: 0.6em;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+}
+
+body main .players-container .player .screen .total .total-score {
+  font-weight: 400;
+}
+
+body main .players-container .player .screen .total .total-label {
+  margin-right: 6px;
+}
+
+body main .players-container .player .screen::before {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: -18px;
+  background: #646464;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(220, 220, 220, 0.8);
+          box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(220, 220, 220, 0.8);
+  z-index: 9999;
+}
+
+body main .players-container .player .screen::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #777;
+  width: calc(100% + 60px);
+  height: calc(100% + 36px);
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 40px rgba(80, 80, 80, 0.8), 0 0 2px 1px rgba(240, 240, 240, 0.8);
+          box-shadow: inset 0 0 40px rgba(80, 80, 80, 0.8), 0 0 2px 1px rgba(240, 240, 240, 0.8);
+  z-index: -1;
+}
+
+body main .players-container .player .controls {
+  width: 100%;
+  margin-bottom: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .players-container .player .controls .tittle {
   text-align: center;
   position: absolute;
   top: -24px;
@@ -306,7 +261,7 @@ body main .switch-players .player-box .player .controls .tittle {
           flex-direction: column;
 }
 
-body main .switch-players .player-box .player .controls .tittle h2 {
+body main .players-container .player .controls .tittle h2 {
   font-size: 1em;
   color: #555;
   font-weight: 600;
@@ -314,14 +269,18 @@ body main .switch-players .player-box .player .controls .tittle h2 {
   text-transform: uppercase;
 }
 
-body main .switch-players .player-box .player .controls .tittle span {
+body main .players-container .player .controls .tittle span {
   font-size: 0.6em;
   color: #555;
   font-weight: 500;
   text-shadow: #e0e0e0 1px 1px 0;
 }
 
-body main .switch-players .player-box .player .controls .dice-box {
+body main .players-container .player .controls .tittle span:first-child {
+  margin-bottom: 1px;
+}
+
+body main .players-container .player .controls .dice-box {
   background: #999;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.8)), to(rgba(220, 220, 220, 0.8)));
   background-image: linear-gradient(180deg, rgba(180, 180, 180, 0.8) 0%, rgba(220, 220, 220, 0.8) 100%);
@@ -329,9 +288,8 @@ body main .switch-players .player-box .player .controls .dice-box {
   height: 100px;
   padding: 12px;
   border-radius: 50%;
-  border-bottom: 1px solid rgba(220, 220, 220, 0.6);
-  -webkit-box-shadow: inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset -1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +301,7 @@ body main .switch-players .player-box .player .controls .dice-box {
           align-items: center;
 }
 
-body main .switch-players .player-box .player .controls .dice-box .img-wrapper {
+body main .players-container .player .controls .dice-box .img-wrapper {
   background: #fff;
   width: 60px;
   height: 60px;
@@ -353,13 +311,13 @@ body main .switch-players .player-box .player .controls .dice-box .img-wrapper {
           box-shadow: 0 4px 8px 1px #505050, -1px -1px 0 1px rgba(220, 220, 220, 0.6), 1px 1px 0 1px rgba(220, 220, 220, 0.4), 0 2px 2px 1px rgba(0, 0, 0, 0.8), 0 3px 2px 1px rgba(0, 0, 0, 0.6);
 }
 
-body main .switch-players .player-box .player .controls .dice-box .img-wrapper img {
+body main .players-container .player .controls .dice-box .img-wrapper img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
 }
 
-body main .switch-players .player-box .player .controls .roll-hold-box {
+body main .players-container .player .controls .right-btns {
   background: #999;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.8)), to(rgba(220, 220, 220, 0.8)));
   background-image: linear-gradient(180deg, rgba(180, 180, 180, 0.8) 0%, rgba(220, 220, 220, 0.8) 100%);
@@ -367,9 +325,11 @@ body main .switch-players .player-box .player .controls .roll-hold-box {
   height: 60px;
   padding: 0 6px;
   border-radius: 50px;
-  border-bottom: 1px solid rgba(220, 220, 220, 0.6);
-  -webkit-box-shadow: inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset -1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,12 +340,9 @@ body main .switch-players .player-box .player .controls .roll-hold-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-  overflow: hidden;
 }
 
-body main .switch-players .player-box .player .controls .roll-hold-box button {
+body main .players-container .player .controls .right-btns .btn {
   background: #777;
   background-image: linear-gradient(155deg, rgba(160, 160, 160, 0.8) 10%, rgba(60, 60, 60, 0.8) 70%, rgba(40, 40, 40, 0.8) 100%);
   width: 40px;
@@ -402,8 +359,8 @@ body main .switch-players .player-box .player .controls .roll-hold-box button {
   text-transform: uppercase;
   -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  -webkit-transform: rotate(30deg) translateY(-1px);
+          transform: rotate(30deg) translateY(-1px);
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,22 +373,21 @@ body main .switch-players .player-box .player .controls .roll-hold-box button {
           align-items: center;
 }
 
-body main .switch-players .player-box .player .controls .roll-hold-box button:hover {
+body main .players-container .player .controls .right-btns .btn:hover {
   -webkit-transform: rotate(30deg) scale(0.95) translateY(0);
           transform: rotate(30deg) scale(0.95) translateY(0);
 }
 
-body main .switch-players .player-box .player .controls .reset-box {
+body main .players-container .player .controls .bottom-btns {
   background: #999;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.8)), to(rgba(220, 220, 220, 0.8)));
   background-image: linear-gradient(180deg, rgba(180, 180, 180, 0.8) 0%, rgba(220, 220, 220, 0.8) 100%);
-  padding: 4px 6px;
+  padding: 6px 8px;
   border-radius: 50px;
-  border-bottom: 1px solid rgba(220, 220, 220, 0.6);
-  -webkit-box-shadow: inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset -1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -1px -1px 2px 0px rgba(240, 240, 240, 0.8), inset 0px 5px 50px 30px rgba(0, 0, 0, 0.2);
   position: absolute;
-  bottom: -52px;
+  bottom: -72px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -444,22 +400,25 @@ body main .switch-players .player-box .player .controls .reset-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 6px;
 }
 
-body main .switch-players .player-box .player .controls .reset-box button {
+body main .players-container .player .controls .bottom-btns .btn {
   background: #777;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(160, 160, 160, 0.8)), color-stop(70%, rgba(60, 60, 60, 0.8)), to(rgba(40, 40, 40, 0.8)));
   background-image: linear-gradient(180deg, rgba(160, 160, 160, 0.8) 10%, rgba(60, 60, 60, 0.8) 70%, rgba(40, 40, 40, 0.8) 100%);
-  padding: 2px 10px;
+  padding: 1px 4px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   -webkit-box-shadow: 0 4px 8px 1px #505050, -1px -1px 0 1px rgba(220, 220, 220, 0.6), 1px 1px 0 1px rgba(220, 220, 220, 0.4), 0 2px 2px 1px rgba(0, 0, 0, 0.8), 0 2px 2px 1px rgba(0, 0, 0, 0.6);
           box-shadow: 0 4px 8px 1px #505050, -1px -1px 0 1px rgba(220, 220, 220, 0.6), 1px 1px 0 1px rgba(220, 220, 220, 0.4), 0 2px 2px 1px rgba(0, 0, 0, 0.8), 0 2px 2px 1px rgba(0, 0, 0, 0.6);
   color: #333;
-  font-size: 0.6em;
+  font-size: 0.5em;
   font-weight: 600;
   text-shadow: #999 1px 1px 2px;
   text-transform: uppercase;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
   -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
   cursor: pointer;
@@ -474,8 +433,192 @@ body main .switch-players .player-box .player .controls .reset-box button {
           align-items: center;
 }
 
-body main .switch-players .player-box .player .controls .reset-box button:hover {
+body main .players-container .player .controls .bottom-btns .btn:hover {
   -webkit-transform: scale(0.95) translateY(0px);
           transform: scale(0.95) translateY(0px);
+}
+
+body main .players-container .player::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 50%;
+  background: #646464;
+  width: 36px;
+  height: 6px;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(220, 220, 220, 0.8);
+          box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(220, 220, 220, 0.8);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+body main .players-container .player.inactive {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  z-index: 8888;
+}
+
+body main .players-container .player.inactive .screen .current {
+  opacity: 0;
+}
+
+body main .players-container .player-0.inactive {
+  margin-left: 0;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+body main .players-container .player-1.inactive {
+  margin-right: 0;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+body main .players-container .player.active {
+  z-index: 9999;
+}
+
+body main .players-container .player.active .screen {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5), 0px 0px 25px 10px rgba(255, 255, 255, 0.35), 0px 0px 30px 15px rgba(214, 214, 214, 0.3), 0px 0px 35px 20px rgba(232, 232, 232, 0.25);
+          box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5), 0px 0px 25px 10px rgba(255, 255, 255, 0.35), 0px 0px 30px 15px rgba(214, 214, 214, 0.3), 0px 0px 35px 20px rgba(232, 232, 232, 0.25);
+}
+
+body main .players-container .player.active .screen .total {
+  opacity: 1;
+}
+
+body main .players-container .player.active .screen .current {
+  font-size: 5em;
+}
+
+body main .players-container .player-0.active {
+  margin-left: calc((1080px - 300px) / 2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main .players-container .player-1.active {
+  margin-right: calc((1080px - 300px) / 2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main .players-container .player.active .screen::before,
+body main .players-container .player.winner .screen::before {
+  background: #00fa5a;
+  -webkit-box-shadow: inset -1px -1px 1px 0px rgba(0, 150, 60, 0.4), 0px 0px 20px 3px rgba(0, 250, 90, 0.4), 0px 0px 15px 5px rgba(0, 250, 90, 0.4), 0px 0px 30px 10px rgba(255, 207, 135, 0.2);
+          box-shadow: inset -1px -1px 1px 0px rgba(0, 150, 60, 0.4), 0px 0px 20px 3px rgba(0, 250, 90, 0.4), 0px 0px 15px 5px rgba(0, 250, 90, 0.4), 0px 0px 30px 10px rgba(255, 207, 135, 0.2);
+}
+
+body main .players-container .player.winner .screen {
+  background: #00fa5a;
+}
+
+body main .players-container .player.winner .screen .current {
+  color: #fff;
+  font-size: 2em;
+}
+
+body main .players-container .player.winner .screen .total {
+  color: #fff;
+  opacity: 1;
+}
+
+body main .players-container .player.loser .screen .current {
+  color: #fff;
+  font-size: 2em;
+}
+
+body main .players-container .player.loser .screen .total {
+  color: #fff;
+  opacity: 1;
+}
+
+body main .players-container .player.loser .screen,
+body main .players-container .player.active.invalid .screen {
+  background: #fa1414;
+}
+
+body main .players-container .player.loser .screen::before,
+body main .players-container .player.active.invalid .screen::before {
+  background: #fa1414;
+  -webkit-box-shadow: inset -1px -1px 1px 0px rgba(150, 20, 20, 0.4), 0px 0px 20px 3px rgba(250, 20, 20, 0.4), 0px 0px 15px 5px rgba(250, 20, 20, 0.4), 0px 0px 30px 10px rgba(255, 207, 135, 0.2);
+          box-shadow: inset -1px -1px 1px 0px rgba(150, 20, 20, 0.4), 0px 0px 20px 3px rgba(250, 20, 20, 0.4), 0px 0px 15px 5px rgba(250, 20, 20, 0.4), 0px 0px 30px 10px rgba(255, 207, 135, 0.2);
+}
+
+body main .players-container .player.active.invalid {
+  -webkit-animation: playerShake 0.2s;
+          animation: playerShake 0.2s;
+}
+
+body main .players-container .player.active.invalid .screen .current {
+  color: #fff;
+  font-size: 2em;
+}
+
+body main .players-container .player.active.invalid .screen .total {
+  color: #fff;
+  opacity: 1;
+}
+
+body main .players-container .player.active.invalid .controls .right-btns,
+body main .players-container .player.active.invalid .controls .bottom-btns {
+  pointer-events: none;
+}
+
+@-webkit-keyframes playerShake {
+  0% {
+    -webkit-transform: rotate(2deg) scale(1.1) translateX(-6px);
+            transform: rotate(2deg) scale(1.1) translateX(-6px);
+  }
+  20% {
+    -webkit-transform: rotate(-2deg) scale(1.1) translateX(6px);
+            transform: rotate(-2deg) scale(1.1) translateX(6px);
+  }
+  40% {
+    -webkit-transform: rotate(2deg) scale(1.1) translateX(-6px);
+            transform: rotate(2deg) scale(1.1) translateX(-6px);
+  }
+  60% {
+    -webkit-transform: rotate(-2deg) scale(1.1) translateX(6px);
+            transform: rotate(-2deg) scale(1.1) translateX(6px);
+  }
+  80% {
+    -webkit-transform: rotate(2deg) scale(1.1) translateX(-6px);
+            transform: rotate(2deg) scale(1.1) translateX(-6px);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg) scale(1.1) translateX(6px);
+            transform: rotate(-2deg) scale(1.1) translateX(6px);
+  }
+}
+
+@keyframes playerShake {
+  0% {
+    -webkit-transform: rotate(2deg) scale(1.1) translateX(-6px);
+            transform: rotate(2deg) scale(1.1) translateX(-6px);
+  }
+  20% {
+    -webkit-transform: rotate(-2deg) scale(1.1) translateX(6px);
+            transform: rotate(-2deg) scale(1.1) translateX(6px);
+  }
+  40% {
+    -webkit-transform: rotate(2deg) scale(1.1) translateX(-6px);
+            transform: rotate(2deg) scale(1.1) translateX(-6px);
+  }
+  60% {
+    -webkit-transform: rotate(-2deg) scale(1.1) translateX(6px);
+            transform: rotate(-2deg) scale(1.1) translateX(6px);
+  }
+  80% {
+    -webkit-transform: rotate(2deg) scale(1.1) translateX(-6px);
+            transform: rotate(2deg) scale(1.1) translateX(-6px);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg) scale(1.1) translateX(6px);
+            transform: rotate(-2deg) scale(1.1) translateX(6px);
+  }
 }
 /*# sourceMappingURL=dice-game.css.map */

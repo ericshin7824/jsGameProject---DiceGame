@@ -17,70 +17,67 @@
             </div>
         </header>
         <main>
-            <section class="switch-players" id="switch-players">
-                <div class="player-box">
-                    <div class="player player-active" id="player-0">
-                        <div class="screen-wrapper">
-                            <div class="screen player-active" id="screen-0">
-                                <div class="total">
-                                    <p class="total-label">Total</p>
-                                    <p class="total-score" id="score-0">0</p>
-                                </div>
-                                <span class="current" id="current-0"></span>
+            <section class="players-container">
+                <div class="player player-0" id="player-0">
+                    <div class="screen" id="screen-0">
+                        <div class="total">
+                            <p class="total-label">Total</p>
+                            <p class="total-score" id="total-0">0</p>
+                        </div>
+                        <p class="current" id="current-0"></p>
+                    </div>
+
+                    <div class="controls">
+                        <div class="tittle">
+                            <span>Javascript Project</span>
+                            <h2>DICE GAME</h2>
+                            <span>Player 1</span>
+                        </div>
+                        <div class="dice-box">
+                            <div class="img-wrapper">
+                                <img src="./dice-game-img/dice-6.png" alt="Playing dice" class="dice-0" />
                             </div>
                         </div>
-                        <div class="controls">
-                            <div class="tittle">
-                                <span>Javascript Project</span>
-                                <h2>DICE GAME</h2>
-                                <span>Player 1</span>
-                            </div>
-                            <div class="dice-box">
-                                <div class="img-wrapper">
-                                    <img src="./dice-game-img/dice-6.png" alt="Playing dice" class="dice-0" />
-                                </div>
-                            </div>
 
-                            <div class="roll-hold-box">
-                                <button onclick="btnRoll(this)" class="btn btn-roll-0">Roll</button>
-                                <button onclick="btnHold(this)" class="btn btn-hold-0">Hold</button>
-                            </div>
-                            <div class="reset-box">
-                                <button onclick="btnNew(this)" class="btn btn-new-0">Reset</button>
-                            </div>
+                        <div class="right-btns">
+                            <button onclick="btnRoll(this)" class="btn" id="roll-0">Roll</button>
+                            <button onclick="btnHold(this)" class="btn" id="hold-0">Hold</button>
+                        </div>
+                        <div class="bottom-btns">
+                            <button onclick="btnStart(this)" class="btn" id="start-0">Start</button>
+                            <button onclick="btnReset(this)" class="btn" id="reset-0">Reset</button>
                         </div>
                     </div>
                 </div>
-                <div class="player-box">
-                    <div class="player player-inactive" id="player-1">
-                        <div class="screen-wrapper">
-                            <div class="screen" id="screen-1">
-                                <div class="total">
-                                    <p class="total-label">Total</p>
-                                    <p class="total-score" id="score-1">00</p>
-                                </div>
-                                <span class="message" id="current-1"> </span>
+
+                <div class="player player-1" id="player-1">
+                    <div class="screen" id="screen-1">
+                        <div class="total">
+                            <p class="total-label">Total</p>
+                            <p class="total-score" id="total-1">00</p>
+                        </div>
+                        <span class="current" id="current-1"> </span>
+                    </div>
+
+                    <div class="controls">
+                        <div class="tittle">
+                            <span>Javascript Project</span>
+                            <h2>DICE GAME</h2>
+                            <span>Player 2</span>
+                        </div>
+                        <div class="dice-box">
+                            <div class="img-wrapper">
+                                <img src="./dice-game-img/dice-6.png" alt="Dice" class="dice-1" />
                             </div>
                         </div>
-                        <div class="controls">
-                            <div class="tittle">
-                                <span>Javascript Project</span>
-                                <h2>DICE GAME</h2>
-                                <span>Player 2</span>
-                            </div>
-                            <div class="dice-box">
-                                <div class="img-wrapper">
-                                    <img src="./dice-game-img/dice-6.png" alt="Dice" class="dice-1" />
-                                </div>
-                            </div>
 
-                            <div class="roll-hold-box">
-                                <button onclick="btnRoll(this)" class="btn btn-roll-1 player-inactive">Roll</button>
-                                <button onclick="btnHold(this)" class="btn btn-hold-1 player-inactive">Hold</button>
-                            </div>
-                            <div class="reset-box">
-                                <button onclick="btnNew(this)" class="btn btn-new-1">Reset</button>
-                            </div>
+                        <div class="right-btns">
+                            <button onclick="btnRoll(this)" class="btn" id="roll-1">Roll</button>
+                            <button onclick="btnHold(this)" class="btn" id="hold-1">Hold</button>
+                        </div>
+                        <div class="bottom-btns">
+                            <button onclick="btnStart(this)" class="btn" id="start-1">Start</button>
+                            <button onclick="btnReset(this)" class="btn" id="reset-1">Reset</button>
                         </div>
                     </div>
                 </div>
